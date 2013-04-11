@@ -11,6 +11,7 @@ class PostTest < Test::Unit::TestCase
       @post.comments << Comment.new(:body => "Worst entry ever")
       @post.comments << Comment.new(:body => "Wooooooo")
       @post.save
+      @post.reload
     end
 
 
